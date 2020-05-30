@@ -1,0 +1,329 @@
+/*FONT FACE*/
+@font-face {
+    font-family: 'PTSans';
+    src: url('./fonts/PTSansBold.eot');
+    src: url('./fonts/PTSansBold.eot') format('embedded-opentype'),
+         url('./fonts/PTSansBold.woff2') format('woff2'),
+         url('./fonts/PTSansBold.woff') format('woff'),
+         url('./fonts/PTSansBold.ttf') format('truetype'),
+         url('./fonts/PTSansBold.svg#PTSansBold') format('svg');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('./fonts/PTSansItalic.eot');
+    src: url('./fonts/PTSansItalic.eot') format('embedded-opentype'),
+         url('./fonts/PTSansItalic.woff2') format('woff2'),
+         url('./fonts/PTSansItalic.woff') format('woff'),
+         url('./fonts/PTSansItalic.ttf') format('truetype'),
+         url('./fonts/PTSansItalic.svg#PTSansItalic') format('svg');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('./fonts/PTSans-Regular.eot');
+    src: url('./fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PTSans-Regular.woff2') format('woff2'),
+        url('./fonts/PTSans-Regular.woff') format('woff'),
+        url('./fonts/PTSans-Regular.ttf') format('truetype'),
+        url('./fonts/PTSans-Regular.svg#PTSans-Regular') format('svg');
+}
+
+
+
+/*BODY*/
+body {
+    background: black;
+    font-family: PTSans;
+    color: whitesmoke;
+    font-size: 1rem;
+    
+}
+
+
+/*MAIN ARTICLE TAG*/
+article {
+    width: 90%;
+    max-width: 1200px;
+    text-align: justify;
+    margin: 0 auto;
+    /*border: white solid 2px;*/
+}
+
+/*HEADER STUFF*/
+header {
+    text-align: center;
+}
+
+header .logo {
+    width: 22%;
+    min-width: 150px;
+    margin: 0rem auto;
+    margin-top: 2rem;
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+
+/*ARTICLE ALL FONT SIZES*/
+article .pageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.67rem;
+    color: white;
+}
+
+article h1 {
+    font-size: 1.58rem;
+    font-weight: bold;
+    text-align: left;
+    color: orange;
+
+}
+
+article p {
+    font-size: 1.15rem;
+}
+
+/*ARTICLE BOLD AND ITALIC*/
+article .bold {
+    font-weight: bold;
+}
+
+article .italicBold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+article bold {
+    font-weight: bold;
+}
+
+article italic {
+    font-style: italic;
+    font-size: 1.15rem;
+}
+
+article .margin {
+    margin: 3rem 0rem;
+}
+
+/*CENTERING CLASS*/
+.centered {
+    text-align: center;
+}
+
+/*LIST OF QUOTES*/
+quotelist {
+    margin: 0.4rem auto;
+    text-align: left;
+}
+quoteList p {
+    font-size: 1.15rem;
+    font-weight: bold;
+    display: block;
+    margin: 0.22rem auto;
+}
+
+author {
+    font-size: 1.15rem;
+    display: block;
+    margin: 0.3rem 0rem;
+}
+
+/*STATEMENT*/
+statement {
+    font-size: 1.15rem;
+    font-weight: bold;
+    display: block;
+    margin: 0.7rem 0rem;
+}
+
+item {
+    font-size: 1.15rem;
+    font-weight: normal;
+    display: block;
+    margin: 0.5rem 0rem;
+}
+
+.left {
+    text-align: left;
+}
+
+/*IMAGES*/
+.cornerLogo {
+    position: absolute;
+    top: 30px;
+    left: 5.5%;
+}
+
+
+/*HONEYBADGER*/
+.honeyBadger {
+    width: 13%;
+    min-width: 105px;
+    margin-top: 1.7rem;
+    margin-bottom: 0.4rem;
+}
+
+/*STANDARD TEXTIMAGE*/
+.textImage {
+    width: 35%;
+    min-width:250px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-delay:0.04s;
+}
+
+.textImageNoHover {
+    width: 42%;
+    min-width:250px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+}
+
+.textImageSmallNoHover {
+    width: 22%;
+    min-width:220px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+}
+
+.textImageExtraSmallNoHover {
+    width: 17%;
+    min-width:210px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .textImage:hover {
+       width: 65%;
+    }
+}
+
+.textImageSmall {
+    width: 25%;
+    min-width:180px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+}
+
+.textImageSmallNoBorder {
+    width: 13%;
+    min-width:150px;
+    margin: 1rem 1rem;
+}
+
+.textImageExtraSmall {
+    width: 18%;
+    min-width:180px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+}
+
+.textImageRow {
+    width: 35%;
+    min-width:200px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+}
+
+/*RESOURCES*/
+.resources {
+    border: white solid 2px;
+    border-radius: 25px;
+    text-align: center;
+    width: 60%;
+    min-width: 250px;
+    margin: 2.8rem auto;
+    padding-top: 1.2rem;
+    display: block;
+}
+
+
+.resourceIcon {
+    width: 55px;
+}
+
+.resources .linktext {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    display: block;
+    margin-top: 0.14rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+/*quote width*/
+.quoteDiv {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*LINK IN TEXT*/
+.textLink {
+    color:orange;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer {
+    margin: 3rem 0 0 0;
+    color: whitesmoke;
+    text-align: center;
+    /*border: green solid 2px;*/
+    position: fixed relative;
+    bottom: 0;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0rem 0rem;
+}
+
+.textImageFooter {
+    width: 15%;
+    min-width: 55px;
+    margin: 0rem 0rem;
+    border: black solid 1px;
+    border-radius: 15px;
+}
+
+.noMargin {
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 840px) {
+    .onlyLarge {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .onlySmall {
+        display: none;
+    }
+}
+.onlySmall {
+    font-size: smaller;
+}
+
